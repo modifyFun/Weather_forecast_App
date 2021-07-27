@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="#00000000"
+    tools:context=".Fragement.WeatherView"
+    android:id="@+id/weather_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="vertical">
+        <!--   温度信息     -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/w100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:text="32℃"
+                android:textColor="@color/colorWeatherView"
+                android:textSize="50sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weatherIcon"
+                app:layout_constraintTop_toTopOf="@+id/weatherIcon" />
+
+            <TextView
+                android:id="@+id/weatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="晴"
+                android:textColor="@color/colorWeatherView"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@+id/temp"
+                app:layout_constraintTop_toBottomOf="@+id/temp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--   风向、紫外线、湿度信息   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colormask">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/windday"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="3级\n西南风"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorWeatherView"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/uvday"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/uv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="弱\n紫外线"
+                    android:textColor="@color/colorWeatherView"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/humday"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/hum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="80%\n相对湿度"
+                    android:textColor="@color/colorWeatherView"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--   预报列表     -->
+        <ListView
+            android:id="@+id/forcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colormask"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="#00000000"
+            android:divider="@null">
+        </ListView>
+
+
+    </LinearLayout>
+
+</ScrollView>

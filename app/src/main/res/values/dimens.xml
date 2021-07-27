@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="basetext">16sp</dimen>
+    <dimen name="searchtext">16sp</dimen>
+    <dimen name="cityitemangle">10dp</dimen>
+    <dimen name="topTitle">22sp</dimen>
+</resources>

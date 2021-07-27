@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">云探天气</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="more">&#xe693;</string>
+    <string name="search">&#xe611;</string>
+    <string name="add">&#xe61e;</string>
+    <string name="collect">&#xe609;</string>
+    <string name="collectActive">&#xe63b;</string>
+    <string name="back">&#xe618;</string>
+</resources>
