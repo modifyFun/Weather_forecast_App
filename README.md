@@ -25,7 +25,7 @@ Based on hefeng weather API and Tencent location SDK Android weather app
 长按栏目可以选择删除收藏城市
 
 <h3>启动屏</h3>
-<img src="https://user-images.githubusercontent.com/58978356/127187368-7b497863-0cda-496f-ae02-047a8b10420e.png" width="300" alt="启动屏" style="text-align:center;"/><br/>
+<img src="https://user-images.githubusercontent.com/58978356/127187368-7b497863-0cda-496f-ae02-047a8b10420e.png" width="300" alt="启动屏"/><br/>
 
 <h3>首页</h3>
 <img src="https://user-images.githubusercontent.com/58978356/127187733-ab2e4247-cff0-4cc3-92d0-647ac1f5bdf3.png" width="300" alt="首页"/><br/>
