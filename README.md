@@ -5,7 +5,9 @@ Based on hefeng weather API and Tencent location SDK Android weather app
 
 ## 运行项目
 1、先到 和风天气api注册，实名认证获得七天天气预报权限。
+
 2、申请 web api 的key
+
 3、在 tq\app\src\main\java\com\xianguoliang\tools\MyApp.java 文件下的 HEKEY 变量赋值你申请的和风天气接口Key
 
 
